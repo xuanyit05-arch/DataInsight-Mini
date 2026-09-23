@@ -1,0 +1,77 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# =========================
+# Virtual environments
+# =========================
+.venv/
+venv/
+env/
+ENV/
+
+# =========================
+# Environment variables / secrets
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# Jupyter Notebook
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Raw / processed datasets
+# =========================
+data/*.csv
+data/**/*.csv
+
+data/*.xlsx
+data/**/*.xlsx
+
+data/*.xls
+data/**/*.xls
+
+data/*.parquet
+data/**/*.parquet
+
+# =========================
+# SQLite / Database files
+# =========================
+data/*.db
+data/**/*.db
+
+data/*.sqlite
+data/**/*.sqlite
+
+data/*.sqlite3
+data/**/*.sqlite3
+
+*.db-wal
+*.db-shm
+*.db-journal
+
+# =========================
+# Logs / temporary files
+# =========================
+*.log
+*.tmp
+*.temp
+
+# =========================
+# OS generated files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,14 @@
+﻿Check,Actual,Expected,Passed
+expected_customer_count,4338,4338,True
+source_customer_count,4338,4338,True
+unique_customer_ids,4338,4338,True
+same_customer_ids,True,True,True
+monetary_equals_source_revenue,8887208.894,8887208.894000001,True
+frequency_equals_distinct_invoices,True,True,True
+exactly_one_segment_per_customer,True,True,True
+segment_labels_match_rules,True,True,True
+valid_segment_names,True,True,True
+scores_between_one_and_five,True,True,True
+rfm_score_matches_components,True,True,True
+segment_counts_equal_customers,4338,4338,True
+segment_revenue_equals_rfm,8887208.894,8887208.894,True

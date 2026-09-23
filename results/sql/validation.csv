@@ -1,0 +1,4 @@
+﻿metric,python_value,sql_value,absolute_difference,exactly_equal,matches
+total_revenue,8887208.894000001,8887208.894,1.862645149230957e-09,False,True
+total_orders,18532.0,18532.0,0.0,True,True
+total_customers,4338.0,4338.0,0.0,True,True
