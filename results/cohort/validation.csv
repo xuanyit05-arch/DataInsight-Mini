@@ -1,0 +1,12 @@
+﻿Check,Actual,Expected,Passed
+one_cohort_month_per_customer,True,True,True
+cohort_matches_first_purchase_month,True,True,True
+cohort_index_nonnegative,True,True,True
+month_zero_retention_is_100_percent,True,True,True
+retention_between_zero_and_one,True,True,True
+retention_equals_active_over_initial,True,True,True
+customer_month_counts_are_distinct_customer_ids,True,True,True
+initial_counts_equal_distinct_cohort_customers,True,True,True
+initial_counts_cover_all_customers,4338,4338,True
+active_count_never_exceeds_cohort_size,True,True,True
+future_months_are_blank,True,True,True

@@ -1,77 +1,48 @@
-# =========================
-# Python
-# =========================
+# Python caches and local environments
 __pycache__/
 *.py[cod]
-*$py.class
-
-# =========================
-# Virtual environments
-# =========================
 .venv/
 venv/
 env/
-ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
 
-# =========================
-# Environment variables / secrets
-# =========================
+# Local configuration and editor files
 .env
 .env.*
 !.env.example
-
-# =========================
-# IDE / Editor
-# =========================
+.streamlit/secrets.toml
 .vscode/
 .idea/
 
-# =========================
-# Jupyter Notebook
-# =========================
-.ipynb_checkpoints/
+# Source and cleaned datasets stay local; download the source from UCI.
+/data/raw/
+/data/processed/
 
-# =========================
-# Raw / processed datasets
-# =========================
-data/*.csv
-data/**/*.csv
-
-data/*.xlsx
-data/**/*.xlsx
-
-data/*.xls
-data/**/*.xls
-
-data/*.parquet
-data/**/*.parquet
-
-# =========================
-# SQLite / Database files
-# =========================
-data/*.db
-data/**/*.db
-
-data/*.sqlite
-data/**/*.sqlite
-
-data/*.sqlite3
-data/**/*.sqlite3
-
+# SQLite databases and their sidecar files
+*.db
+*.sqlite
+*.sqlite3
 *.db-wal
 *.db-shm
 *.db-journal
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite-journal
+*.sqlite3-wal
+*.sqlite3-shm
+*.sqlite3-journal
 
-# =========================
-# Logs / temporary files
-# =========================
+# Reproducible customer-level exports; keep compact summaries and charts.
+/results/rfm/rfm_customers.csv
+/results/sql/customer_order_summary.csv
+
+# Temporary and operating-system files
 *.log
 *.tmp
 *.temp
-
-# =========================
-# OS generated files
-# =========================
 .DS_Store
 Thumbs.db
 desktop.ini
