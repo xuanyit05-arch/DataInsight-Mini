@@ -25,7 +25,7 @@
 
 ## Tech Stack
 
-Python、pandas、NumPy、Matplotlib、SQLite（Python 内置 `sqlite3`）、SQL、Streamlit、openpyxl。依赖清单见 [requirements.txt](requirements.txt)。
+Python、pandas、NumPy、Matplotlib、SQLite（Python 内置 `sqlite3`）、SQL、Streamlit、openpyxl。Dashboard 的运行依赖见 [requirements.txt](requirements.txt)；离线重算分析结果还需 NumPy、Matplotlib 和 openpyxl。
 
 ## Project Architecture
 
@@ -104,10 +104,11 @@ DataInsight-Mini/
 
 ## How to Run
 
-已验证的运行环境为 Python 3.11。先安装依赖；如需从原始数据完整复现，请从下方数据源下载 `Online Retail.xlsx`，创建 `data/raw/` 目录并保存为 `data/raw/online_retail.xlsx`。然后在项目根目录执行：
+已验证的运行环境为 Python 3.11。只查看 Dashboard 时，在项目根目录安装 `requirements.txt` 并运行最后一条命令。如需从原始数据完整复现，还需从下方数据源下载 `Online Retail.xlsx`，创建 `data/raw/` 目录并保存为 `data/raw/online_retail.xlsx`，再安装离线分析依赖并执行分析脚本：
 
 ```bash
 python -m pip install -r requirements.txt
+python -m pip install "numpy>=1.26,<3.0" "matplotlib>=3.8,<4.0" "openpyxl>=3.1,<4.0"  # 仅完整复现需要
 python src/clean_data.py
 python src/analysis.py
 python src/sql_analysis.py
